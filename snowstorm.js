@@ -1,6 +1,6 @@
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
- * Making it snow on the internets since 2003. You're welcome.
+ * Making it snow on the internets since 2003. Youre welcome.
  * -----------------------------------------------------------
  * Version 1.44.20131215 (Previous rev: 1.44.20131208)
  * Copyright (c) 2007, Scott Schiller. All rights reserved.
