@@ -17,8 +17,8 @@ var snowStorm = (function(window, document) {
   
     this.autoStart = true;          // Whether the snow should start automatically or not.
     this.excludeMobile = true;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) Enable at your own risk.
-    this.flakesMax = 128;           // Limit total amount of snow made (falling + sticking)
-    this.flakesMaxActive = 64;      // Limit amount of snow falling at once (less = lower CPU use)
+    this.flakesMax = 108;           // Limit total amount of snow made (falling + sticking)
+    this.flakesMaxActive = 40;      // Limit amount of snow falling at once (less = lower CPU use)
     this.animationInterval = 33;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
     this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
     this.className = null;          // CSS class name for further customization on snow elements
@@ -28,7 +28,7 @@ var snowStorm = (function(window, document) {
     this.snowCharacter = '&bull;';  // &bull; = bullet, &middot; is square on some systems etc.
     this.snowStick = true;          // Whether or not snow should "stick" at the bottom. When off, will never collect.
     this.targetElement = null;      // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
-    this.useMeltEffect = true;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
+    this.useMeltEffect = false;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
     this.useTwinkleEffect = false;  // Allow snow to randomly "flicker" in and out of view while falling
     this.usePositionFixed = false;  // true = snow does not shift vertically when scrolling. May increase CPU load, disabled by default - if enabled, used only where supported
     this.usePixelPosition = false;  // Whether to use pixel values for snow top/left vs. percentages. Auto-enabled if body is position:relative or targetElement is specified.
